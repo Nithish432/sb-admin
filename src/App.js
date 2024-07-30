@@ -14,7 +14,7 @@ function App() {
   return <>
   <div id="wrapper">
     <Sidebar/>
-    <Dashboard data={{data}}/>
+    <Dashboard data={data}/>
     
   </div>
   </>
