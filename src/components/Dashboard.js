@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Dashboard(props) {
-    console.log(props)
     return <>
         {/* <!-- Content Wrapper --> */}
         <div id="content-wrapper" className="d-flex flex-column">
@@ -26,7 +25,7 @@ function Dashboard(props) {
                                         <div className="col mr-2">
                                             <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Earnings (Monthly)</div>
-                                            <div className="h5 mb-0 font-weight-bold text-gray-800">${props.data.data.earningsMonthly}</div>
+                                            <div className="h5 mb-0 font-weight-bold text-gray-800">${props.data.earningsMonthly}</div>
                                         </div>
                                         <div className="col-auto">
                                             <i className="fas fa-calendar fa-2x text-gray-300"></i>
@@ -44,7 +43,7 @@ function Dashboard(props) {
                                         <div className="col mr-2">
                                             <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Earnings (Annual)</div>
-                                            <div className="h5 mb-0 font-weight-bold text-gray-800">${props.data.data.earningsAnnual}</div>
+                                            <div className="h5 mb-0 font-weight-bold text-gray-800">${props.data.earningsAnnual}</div>
                                         </div>
                                         <div className="col-auto">
                                             <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -69,7 +68,7 @@ function Dashboard(props) {
                                                 <div className="col">
                                                     <div className="progress progress-sm mr-2">
                                                         <div className="progress-bar bg-info" role="progressbar"
-                                                            style={{ "width": `${props.data.data.task}%`, "ariaValuenow": `${props.data.data.task}`, "ariaValuemin": "0", "ariaValuemax": "100" }}></div>
+                                                            style={{ "width": `${props.data.task}%`, "ariaValuenow": `${props.data.task}`, "ariaValuemin": "0", "ariaValuemax": "100" }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -90,7 +89,7 @@ function Dashboard(props) {
                                         <div className="col mr-2">
                                             <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 Pending Requests</div>
-                                            <div className="h5 mb-0 font-weight-bold text-gray-800">{props.data.data.pendingRequest}</div>
+                                            <div className="h5 mb-0 font-weight-bold text-gray-800">{props.data.pendingRequest}</div>
                                         </div>
                                         <div className="col-auto">
                                             <i className="fas fa-comments fa-2x text-gray-300"></i>
@@ -100,7 +99,6 @@ function Dashboard(props) {
                             </div>
                         </div>
                     </div>
-                    <input type="text" onChange={(e) => props.data.setValue(e.target.value)}></input>
                 </div>
             </div>
         </div>

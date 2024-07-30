@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 import Dashboard from './components/Dashboard';
 import Sidebar from './components/Sidebar';
 
@@ -11,14 +10,11 @@ function App() {
     task:"80",
     pendingRequest:18,
   }
-  
-  const [value,setValue] = useState("Hii")
 
   return <>
   <div id="wrapper">
     <Sidebar/>
-    <h1>{value}</h1>
-    <Dashboard data={{data,setValue}}/>
+    <Dashboard data={{data}}/>
     
   </div>
   </>
