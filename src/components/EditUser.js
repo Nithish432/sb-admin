@@ -34,7 +34,7 @@ function EditUser(props) {
     with empty dependency array - will be triggered only for the first time when a component renders
     useEffect(()=>{
         //do something
-    })
+    },[])
 
     with dependency array - will be triggered everytime when the dependent state value changes
     useEffect(()=>{
